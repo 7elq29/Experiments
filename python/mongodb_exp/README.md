@@ -7,11 +7,13 @@ and measure the performance.
 
 1. Install mongoDB > version 3.5
 
-2. Config connection in mongo_test.py
+2. unzip datatset/news/Archive.zip and dataset/pagecount/pagecount-2017-09-part0.zip
+
+3. Config connection in mongo_test.py
 
 `self.client = MongoClient("localhost", 27017)`
 
-3. Run mongo_test.py
+4. Run mongo_test.py
 
 
 # Report
