@@ -24,12 +24,12 @@ and measure the performance.
 
 *Insertion*
 
-To insert the page count data, first the file will be split into chunks, each of them is 
-  1 MB large, and the cursor of each chunk is saved in a thread safe queue. 
-  Then *n* threads will be created and each of them will do the following operations,
-1. grab a chunk from the queue.
-2. for each line in the chunk, create a corresponding mongoDB document, put it into buffer.
-3. when buffer size exceed *m* documents, write the buffer to mongoDB.
+To insert the page count data, first the file is split into chunks, each of which is 
+  1 MB large. 
+  Then *n* subprocesses are created and assigned several chunks. Each of them will do the following operations,
+1. for each line in the chunk, create a corresponding mongoDB document, put it into buffer.
+2. when buffer size exceed *m* documents, write the buffer to mongoDB.
 
-With *n* equals to 8 and *m* equals to 50,000, the whole process (read file and write to mongo) takes about 180 seconds to finish.
+With *n* equals to 4 and *m* equals to 50,000, the whole process (read file and write to mongo) takes
+ about 75 seconds to finish. (40000 inserts / sec)
  

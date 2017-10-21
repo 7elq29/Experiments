@@ -14,7 +14,7 @@ class MongoTest:
     def test(self):
         test_case = TestSet(self.client)
         test_case.load_class(PageCountTest,
-                        ['case_insert'])
+                        ['case_insert', 'case_query', 'case_build_index', 'case_query'])
         test_case.run_test()
 
 
