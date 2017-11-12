@@ -1,4 +1,4 @@
-package personal.experiments.loadfactor;
+package loadfactor;
 
 /**
  * Created by Ken on 8/27/17.

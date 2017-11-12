@@ -1,4 +1,4 @@
-package personal.experiments.loadfactor;
+package loadfactor;
 
 import java.util.*;
 
