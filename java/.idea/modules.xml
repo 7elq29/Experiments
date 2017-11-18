@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Rehasing_Load_Factor.iml" filepath="$PROJECT_DIR$/Rehasing_Load_Factor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Experiment.iml" filepath="$PROJECT_DIR$/Experiment.iml" />
     </modules>
   </component>
 </project>

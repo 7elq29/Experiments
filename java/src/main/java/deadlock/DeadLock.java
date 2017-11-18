@@ -9,6 +9,13 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class DeadLock {
 
+    /*
+     * Mutual exclusion
+     * Hold and wait or resource holding
+     * No preemption
+     * Circular wait
+     */
+
     Lock lock1 = new ReentrantLock();
     Lock lock2 = new ReentrantLock();
 
